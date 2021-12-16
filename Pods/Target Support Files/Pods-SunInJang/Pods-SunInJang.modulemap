@@ -1,0 +1,6 @@
+framework module Pods_SunInJang {
+  umbrella header "Pods-SunInJang-umbrella.h"
+
+  export *
+  module * { export * }
+}
