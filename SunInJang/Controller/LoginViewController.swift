@@ -5,14 +5,13 @@
 //  Created by 진시윤 on 2021/12/16.
 //
 
-import RxCocoa
 import RxSwift
 import SnapKit
 import Then
 import UIKit
 import SwiftUI
 
-class LoginViewController: UIViewController {
+class LoginViewController: baseVC {
     // MARK: - Propertise
     private let bound = UIScreen.main.bounds
     
@@ -20,12 +19,7 @@ class LoginViewController: UIViewController {
         $0.text = "Login"
         $0.font = UIFont(name: "FredokaOne-Regular", size: 30)
         $0.textColor = UIColor(red: 0.792, green: 0.757, blue: 0.706, alpha: 1)
-        
     }
-    
-    
-    
-    
     
     private let IDTextfield = AuthTextField(subTitle: "ID", placeholder: "아이디를 입력해주세요.")
 

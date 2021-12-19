@@ -26,7 +26,7 @@ extension UITextField{
         self.layer.shadowRadius = 10
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
     }
-    func addlabel() {
+    func label1() {
         
     }
 }

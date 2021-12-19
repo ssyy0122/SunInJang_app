@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		66724D4A328C4945C9CB39A8 /* Pods_SunInJang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D386B7773749FAEB676C21 /* Pods_SunInJang.framework */; };
+		E88963DB276C3815007917ED /* baseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88963DA276C3815007917ED /* baseVC.swift */; };
 		E89953B3276AC571009D4D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89953B2276AC571009D4D16 /* AppDelegate.swift */; };
 		E89953B5276AC571009D4D16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89953B4276AC571009D4D16 /* SceneDelegate.swift */; };
-		E89953B7276AC571009D4D16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89953B6276AC571009D4D16 /* ViewController.swift */; };
-		E89953BA276AC571009D4D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89953B8276AC571009D4D16 /* Main.storyboard */; };
 		E89953BC276AC572009D4D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89953BB276AC572009D4D16 /* Assets.xcassets */; };
 		E89953BF276AC572009D4D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89953BD276AC572009D4D16 /* LaunchScreen.storyboard */; };
 		E89953CC276ADAF0009D4D16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89953CB276ADAF0009D4D16 /* LoginViewController.swift */; };
@@ -23,11 +22,10 @@
 		39D386B7773749FAEB676C21 /* Pods_SunInJang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunInJang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37D06A31078032D7B772812 /* Pods-SunInJang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunInJang.debug.xcconfig"; path = "Target Support Files/Pods-SunInJang/Pods-SunInJang.debug.xcconfig"; sourceTree = "<group>"; };
 		E5493B619D5B969588AC50D9 /* Pods-SunInJang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunInJang.release.xcconfig"; path = "Target Support Files/Pods-SunInJang/Pods-SunInJang.release.xcconfig"; sourceTree = "<group>"; };
+		E88963DA276C3815007917ED /* baseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseVC.swift; sourceTree = "<group>"; };
 		E89953AF276AC571009D4D16 /* SunInJang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunInJang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89953B2276AC571009D4D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E89953B4276AC571009D4D16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E89953B6276AC571009D4D16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E89953B9276AC571009D4D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E89953BB276AC572009D4D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E89953BE276AC572009D4D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E89953C0276AC572009D4D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +63,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E88963D9276C3803007917ED /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E88963DA276C3815007917ED /* baseVC.swift */,
+				E89953CD276B5583009D4D16 /* Common */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		E89953A6276AC571009D4D16 = {
 			isa = PBXGroup;
 			children = (
@@ -86,14 +93,13 @@
 		E89953B1276AC571009D4D16 /* SunInJang */ = {
 			isa = PBXGroup;
 			children = (
-				E89953CD276B5583009D4D16 /* Common */,
+				E88963D9276C3803007917ED /* Base */,
 				E89953CA276ADA77009D4D16 /* Views */,
 				E89953C9276AD79A009D4D16 /* Controller */,
 				E89953B2276AC571009D4D16 /* AppDelegate.swift */,
 				E89953B4276AC571009D4D16 /* SceneDelegate.swift */,
 				E89953C8276AD6D2009D4D16 /* Models */,
 				E89953BB276AC572009D4D16 /* Assets.xcassets */,
-				E89953B8276AC571009D4D16 /* Main.storyboard */,
 				E89953C0276AC572009D4D16 /* Info.plist */,
 			);
 			path = SunInJang;
@@ -109,7 +115,6 @@
 		E89953C9276AD79A009D4D16 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E89953B6276AC571009D4D16 /* ViewController.swift */,
 				E89953CB276ADAF0009D4D16 /* LoginViewController.swift */,
 			);
 			path = Controller;
@@ -202,7 +207,6 @@
 			files = (
 				E89953BF276AC572009D4D16 /* LaunchScreen.storyboard in Resources */,
 				E89953BC276AC572009D4D16 /* Assets.xcassets in Resources */,
-				E89953BA276AC571009D4D16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,25 +260,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E89953CC276ADAF0009D4D16 /* LoginViewController.swift in Sources */,
-				E89953B7276AC571009D4D16 /* ViewController.swift in Sources */,
 				E89953D2276B5650009D4D16 /* UiTextFieldExt.swift in Sources */,
 				E89953D4276B60E7009D4D16 /* AuthTextField.swift in Sources */,
 				E89953B3276AC571009D4D16 /* AppDelegate.swift in Sources */,
 				E89953B5276AC571009D4D16 /* SceneDelegate.swift in Sources */,
+				E88963DB276C3815007917ED /* baseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E89953B8276AC571009D4D16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E89953B9276AC571009D4D16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E89953BD276AC572009D4D16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -414,7 +410,6 @@
 				INFOPLIST_FILE = SunInJang/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -442,7 +437,6 @@
 				INFOPLIST_FILE = SunInJang/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

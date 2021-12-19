@@ -4,14 +4,13 @@
 //
 //  Created by 진시윤 on 2021/12/16.
 //
-
+//커스텀 클래스!@#!#@!#@!#@!#@!#@!#@!#@!#@!#@!#@!#@!#@!#@!#@!#@!#@!#!@#@!
 import UIKit
 import SnapKit
 
 final class AuthTextField: UITextField{
     // MARK: - Properties
     private let subTitleLabel = UILabel()
-    
     
     // MARK: - Init
     init(subTitle: String, placeholder: String){
